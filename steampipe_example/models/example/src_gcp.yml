@@ -1,0 +1,248 @@
+version: 2
+
+sources:
+  - name: gcp
+    schema: gcp
+    tables:
+    - name: gcp_audit_policy
+      description:  GCP Audit Policy
+
+    - name: gcp_bigquery_dataset
+      description:  GCP BigQuery Dataset
+
+    - name: gcp_bigquery_job
+      description:  GCP BigQuery Job
+
+    - name: gcp_bigquery_table
+      description:  GCP Bigquery Table                                  
+
+    - name: gcp_bigtable_instance
+      description:  GCP Bigtable Instance                               
+
+    - name: gcp_cloudfunctions_function
+      description:  GCP Cloud Function                                  
+
+    - name: gcp_compute_address
+      description:  GCP Compute Address                                 
+
+    - name: gcp_compute_backend_bucket
+      description:  GCP Compute Backend Bucket                          
+
+    - name: gcp_compute_backend_service
+      description:  GCP Compute Backend Service                         
+
+    - name: gcp_compute_disk
+      description:  GCP Compute Disk                                    
+
+    - name: gcp_compute_disk_metric_read_ops
+      description:  GCP Compute Disk Metrics - Read Ops                 
+
+    - name: gcp_compute_disk_metric_read_ops_daily
+      description:  GCP Compute Disk Metrics - Read Ops (Daily)         
+
+    - name: gcp_compute_disk_metric_read_ops_hourly
+      description:  GCP Compute Disk Metrics - Read Ops (Hourly)        
+
+    - name: gcp_compute_disk_metric_write_ops
+      description:  GCP Compute Disk Metrics - Write Ops                
+
+    - name: gcp_compute_disk_metric_write_ops_daily
+      description:  GCP Compute Disk Metrics - Write Ops (Daily)        
+
+    - name: gcp_compute_disk_metric_write_ops_hourly
+      description:  GCP Compute Disk Metrics - Write Ops (Hourly)       
+
+    - name: gcp_compute_firewall
+      description:  GCP Compute Firewall                                
+
+    - name: gcp_compute_forwarding_rule
+      description:  GCP Compute Forwarding Rule                         
+
+    - name: gcp_compute_global_address
+      description:  GCP Compute Global Address                          
+
+    - name: gcp_compute_global_forwarding_rule
+      description:  GCP Compute Global Forwarding Rule                  
+
+    - name: gcp_compute_image
+      description:  GCP Compute Image                                   
+
+    - name: gcp_compute_instance
+      description:  GCP Compute Instance                                
+
+    - name: gcp_compute_instance_metric_cpu_utilization
+      description:  GCP Compute Instance Metrics - CPU Utilization      
+
+    - name: gcp_compute_instance_metric_cpu_utilization_daily
+      description:  GCP Compute Instance Metrics - CPU Utilization (Daily)                                                 
+
+    - name: gcp_compute_instance_metric_cpu_utilization_hourly
+      description:  GCP Compute Instance Metrics - CPU Utilization (Hourly)                                                
+
+    - name: gcp_compute_instance_template
+      description:  GCP Compute Instance Template                       
+
+    - name: gcp_compute_machine_type
+      description:  GCP Compute Machine Type                            
+
+    - name: gcp_compute_network
+      description:  GCP Compute Network                                 
+
+    - name: gcp_compute_node_group
+      description:  GCP Compute Node Group                              
+
+    - name: gcp_compute_node_template
+      description:  GCP Compute Node Template                           
+
+    - name: gcp_compute_project_metadata
+      description:  GCP Compute Project Metadata                        
+
+    - name: gcp_compute_region
+      description:  GCP Compute Region                                  
+
+    - name: gcp_compute_resource_policy
+      description:  GCP Compute Resource Policy                         
+
+    - name: gcp_compute_router
+      description:  GCP Compute Router                                  
+
+    - name: gcp_compute_snapshot
+      description:  GCP Compute Snapshot                                
+
+    - name: gcp_compute_ssl_policy
+      description:  GCP Compute SSL Policy                              
+
+    - name: gcp_compute_subnetwork
+      description:  GCP Compute Subnetwork                              
+
+    - name: gcp_compute_target_https_proxy
+      description:  GCP Compute Target Https Proxy                      
+
+    - name: gcp_compute_target_pool
+      description:  GCP Compute Target Pool                             
+
+    - name: gcp_compute_target_ssl_proxy
+      description:  GCP Compute Target SSL Proxy                        
+
+    - name: gcp_compute_target_vpn_gateway
+      description:  GCP Compute Target VPN Gateway                      
+
+    - name: gcp_compute_url_map
+      description:  GCP Compute URL Map                                 
+
+    - name: gcp_compute_vpn_tunnel
+      description:  GCP Compute VPN Tunnel                              
+
+    - name: gcp_compute_zone
+      description:  GCP Compute Zone                                    
+
+    - name: gcp_dataproc_cluster
+      description:  GCP Dataproc Cluster                                
+
+    - name: gcp_dns_managed_zone
+      description:  GCP DNS Managed Zone                                
+
+    - name: gcp_dns_policy
+      description:  GCP DNS Policy                                      
+
+    - name: gcp_dns_record_set
+      description:  GCP DNS Record Set                                  
+
+    - name: gcp_iam_policy
+      description:  GCP IAM Policy                                      
+
+    - name: gcp_iam_role
+      description:  GCP IAM Role                                        
+
+    - name: gcp_kms_key
+      description:  GCP KMS Key                                         
+
+    - name: gcp_kms_key_ring
+      description:  GCP KMS Key Ring                                    
+
+    - name: gcp_kms_key_version
+      description:  GCP KMS Key Version                                 
+
+    - name: gcp_kubernetes_cluster
+      description:  GCP Kubernetes Cluster                              
+
+    - name: gcp_kubernetes_node_pool
+      description:  GCP Kubernetes Node Pool                            
+
+    - name: gcp_logging_bucket
+      description:  GCP Logging Bucket                                  
+
+    - name: gcp_logging_exclusion
+      description:  GCP Logging Exclusion                               
+
+    - name: gcp_logging_metric
+      description:  GCP Logging Metric                                  
+
+    - name: gcp_logging_sink
+      description:  GCP Logging Sink                                    
+
+    - name: gcp_monitoring_alert_policy
+      description:  GCP Monitoring Alert Policy                         
+
+    - name: gcp_monitoring_group
+      description:  GCP Monitoring Group                                
+
+    - name: gcp_monitoring_notification_channel
+      description:  GCP Monitoring Notification Channel                 
+
+    - name: gcp_organization
+      description:  GCP Organization                                    
+
+    - name: gcp_project
+      description:  GCP Project                                         
+
+    - name: gcp_project_organization_policy
+      description:  GCP Project Organization Policy                     
+
+    - name: gcp_project_service
+      description:  GCP Project Service                                 
+
+    - name: gcp_pubsub_snapshot
+      description:  GCP Pub/Sub Snapshot                                
+
+    - name: gcp_pubsub_subscription
+      description:  GCP Pub/Sub Subscription                            
+
+    - name: gcp_pubsub_topic
+      description:  GCP Pub/Sub Topic                                   
+
+    - name: gcp_service_account
+      description:  GCP Service Account                                 
+
+    - name: gcp_service_account_key
+      description:  GCP Service Account Key                             
+
+    - name: gcp_sql_backup
+      description:  GCP SQL Backup
+
+    - name: gcp_sql_database
+      description:  GCP SQL Database
+
+    - name: gcp_sql_database_instance
+      description:  GCP SQL Database Instance                           
+
+    - name: gcp_sql_database_instance_metric_connections
+      description:  GCP SQL Database Instance Metrics Connections       
+
+    - name: gcp_sql_database_instance_metric_connections_daily
+      description:  GCP SQL Database Instance Metrics - Connections (Daily)                                                
+
+    - name: gcp_sql_database_instance_metric_connections_hourly
+      description:  GCP SQL Database Instance Metrics - Connections (Hourly)                                               
+
+    - name: gcp_sql_database_instance_metric_cpu_utilization
+      description:  GCP SQL Database Instance Metrics - CPU Utilization
+
+    - name: gcp_sql_database_instance_metric_cpu_utilization_daily
+      description:  GCP SQL Database Instance Metrics - CPU Utilization (Daily)
+
+    - name: gcp_sql_database_instance_metric_cpu_utilization_hourly
+      description:  GCP SQL Database Instance Metrics - CPU Utilization (Hourly)
+
+    - name: gcp_storage_bucket
+      description:  GCP Storage Bucket

@@ -1,0 +1,11 @@
+default:
+  outputs:
+    default:
+      type: postgres
+      host: localhost
+      user: steampipe
+      password: steampipe
+      port: 9193
+      dbname: steampipe
+      schema: public
+      threads: 1

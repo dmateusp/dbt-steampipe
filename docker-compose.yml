@@ -1,0 +1,15 @@
+services:
+  steampipe:
+    build:
+      context: .
+      args:
+        PLUGINS: aws gcp
+    command: ["service", "start", "--foreground", "--show-password"]
+    ports:
+      - 9193:9193
+    volumes:
+      - ~/.aws/credentials:/home/steampipe/.aws/credentials:ro
+      - "~/.config/gcloud/:/home/steampipe/.config/gcloud/"
+      - ./conf:/home/steampipe/.steampipe/config
+    environment:
+      - STEAMPIPE_DATABASE_PASSWORD=steampipe

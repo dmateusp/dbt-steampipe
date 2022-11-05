@@ -1,0 +1,5 @@
+services:
+  steampipe:
+    build:
+      args:
+        PLUGINS: aws gcp
